@@ -32,3 +32,12 @@ jobs:
       - name: Ejecutar pruebas unitarias
         run: |
           pytest -v
+
+      - name: Publicar artefactos del proyecto
+        uses: actions/upload-artifact@v4
+        with:
+          name: evidencias-nlp-ag-news
+          path: |
+            outputs/figures/
+            outputs/reports/
+          if-no-files-found: warn
