@@ -72,8 +72,6 @@ models/
 
 src/
   nlp/
-  models/
-  utils/
 
 tests/
 
